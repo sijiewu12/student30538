@@ -6,8 +6,8 @@ app_ui = ui.page_fluid(
     ui.input_select(id = 'state', label = 'Choose a state:',
     choices = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]),
     ui.output_plot('ts'),
-    ui.output_table("subsetted_data_table")
-
+    ui.output_table("subsetted_data_table"),
+    ui.input_radio_buttons(id = 'state',  label = 'Choose case or death:', choices = ["cases", "deaths"])
 )
 
 
